@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Assignment</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaQuery.css"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- The section of the navigation bar -->
+        <div class="nav-bar">        
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Pro Cleaners</a></li>
+                    <li><a href="#">Phone: +234 80-5383-8074</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- The Hero section -->
+        <div class="hero-section">
+            <div class="hero-left">
+                <div class="hero-center">
+                    <h2>Vancouver's Best Home Cleaners</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae quod molestias voluptas nam facere numquam quos pariatur repellendus excepturi as nam facere numquam quos pariatur repellendus excepturi</p>
+                </div>
+            </div>
+    
+            <div class="hero-right">
+                <div class="hero-form">
+                    <h2>Request Info & Booking</h2>
+                    <p>Fill this form and we will contact you as soon as we can</p>
+                    <div class="form">
+                        <form>
+                            <input type="text" name="name" id="name" placeholder="Your name" required/>
+                            <input type="email" id="email" placeholder="Your email" required/>
+                            <input type="number" id="phone" placeholder="Your phone" required/>
+                            <input type="button" onclick="formSubmit()" value="Request Info & Booking"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The section of the snapshot -->
+        <div class="snapshot-box">
+            <div class="snapshot-box-content">
+                <div class="box1">
+                        <div class="circle">
+                            <img src="assets/user.png"/>
+                        </div>
+                        <h5>Trusted Professionals</h5>
+                        <p>Our professional experience and friendly background will help you </p>
+                </div>
+
+                <div class="box1">
+                    <div class="circle">
+                        <img src="assets/calendar.png"/>
+                    </div>
+                    <h5>Available Everyday</h5>
+                    <p>We will be available to server you 7days per week and we will always be there</p>
+                </div>
+
+                <div class="box1">
+                    <div class="circle">
+                        <img src="assets/dollar.png"/>
+                    </div>
+                    <h5>100% Money-Back Guarantee</h5>
+                    <p>If you are not satisfied, we will refund your money, it is as simple as that.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- The article section -->
+        <div class="article">
+            <h2>What our clients say</h2>
+
+            <div class="article-center">
+                <div class="article-box">
+                    <div class="circles">
+                        <img src="assets/image.jpg"/>
+                    </div>
+                    <h6>Mrs Mellisa Glory</h6>
+                    <hr/>
+                    <p>Bizzabo is a company that provides tools to help professional event planning and execution, and their customers are very happy folks!</p>
+                </div>
+    
+                <div class="article-box">
+                    <div class="circles">
+                        <img src="assets/download.jpeg"/>
+                    </div>
+                    <h6>Mr Ayodeji Oladimeji</h6>
+                    <hr/>
+                    <p>Booker provides software that helps retailers manage their stores. This company leverages their customers to tell the story of what makes their software great </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h4>&copy; copyright all rights reserved</h4>
+        </footer>
+    </div>
+
+    <script>
+        var formSubmit = () => {
+            let fullname = document.getElementById('name').value
+            let email = document.getElementById('email').value
+            let phone = document.getElementById('phone').value
+
+
+            alert("Name: " + fullname + "\n email: " + email + "\n phone: " + phone)
+        }
+    </script>
+</body>
+</html>
